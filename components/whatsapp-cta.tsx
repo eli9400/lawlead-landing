@@ -15,12 +15,12 @@ export function WhatsAppCta({
   className,
 }: WhatsAppCtaProps) {
   const baseStyle =
-    "inline-flex min-h-12 items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold";
+    "cta-shine inline-flex min-h-12 items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent sm:min-h-14 sm:px-8 sm:text-base";
 
   const variantStyle =
     variant === "primary"
-      ? "bg-brand-gold text-brand-night shadow-[0_14px_36px_rgba(212,173,94,0.34)] hover:-translate-y-0.5 hover:bg-[#e5c57b]"
-      : "border border-brand-gold/50 bg-white/5 text-brand-sand hover:-translate-y-0.5 hover:bg-white/10";
+      ? "bg-gradient-to-b from-brand-gold-soft to-brand-gold text-brand-night shadow-[0_18px_36px_rgba(216,184,107,0.44)] hover:-translate-y-1 hover:scale-[1.01] hover:shadow-[0_24px_44px_rgba(216,184,107,0.46)] active:translate-y-0"
+      : "border border-brand-accent/40 bg-white/[0.08] text-white shadow-[0_12px_26px_rgba(8,20,46,0.35)] hover:-translate-y-1 hover:border-brand-accent/70 hover:bg-white/[0.16]";
 
   return (
     <a

@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
-import { Assistant, Frank_Ruhl_Libre } from "next/font/google";
+import { Heebo } from "next/font/google";
 
 import "./globals.css";
 
-const assistant = Assistant({
+const heebo = Heebo({
   subsets: ["hebrew", "latin"],
-  variable: "--font-assistant",
-  display: "swap",
-});
-
-const frankRuhlLibre = Frank_Ruhl_Libre({
-  subsets: ["hebrew", "latin"],
-  variable: "--font-frank-ruhl",
-  weight: ["400", "700"],
+  variable: "--font-heebo",
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
   display: "swap",
 });
 
@@ -43,7 +37,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "LawLead - מערכת לידים לעורכי דין",
+        alt: "LawLead - מערכת לידים חכמה למשרדי דיני משפחה",
       },
     ],
   },
@@ -68,7 +62,7 @@ export default function RootLayout({
       lang="he"
       dir="rtl"
       data-scroll-behavior="smooth"
-      className={`${assistant.variable} ${frankRuhlLibre.variable} h-full antialiased`}
+      className={`${heebo.variable} h-full antialiased`}
     >
       <body className="min-h-full">{children}</body>
     </html>

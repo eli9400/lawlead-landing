@@ -20,12 +20,12 @@ export function SectionTitle({
   return (
     <div className={cn("space-y-4", centered && "text-center", className)}>
       {eyebrow ? (
-        <p className="text-xs font-semibold tracking-[0.25em] text-brand-gold/90 uppercase">
+        <p className="text-xs font-semibold tracking-[0.22em] text-brand-gold-soft uppercase">
           {eyebrow}
         </p>
       ) : null}
 
-      <h2 className="font-display text-3xl leading-tight text-white sm:text-4xl">
+      <h2 className="font-display text-3xl font-extrabold leading-tight text-white sm:text-4xl">
         {title}
       </h2>
 
